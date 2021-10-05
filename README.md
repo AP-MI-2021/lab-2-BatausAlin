@@ -36,24 +36,26 @@ Scrieți un program care:
     - Funcția principală: `is_superprime(n) -> bool`
     - Funcția de test: `test_is_superprime()`
 
-	
-7. Determină dacă un număr este antipalindrom: un număr este antipalindrom dacă oricare două cifre egal depărtate de extremități sunt diferite (excepție făcând cifra din mijloc dacă avem un număr impar de cifre). De exemplu: `2783` este antipalindrom, iar `2773` nu este.
+    5354567651852807
+7. 09/26
+8. 847
+9. Determină dacă un număr este antipalindrom: un număr este antipalindrom dacă oricare două cifre egal depărtate de extremități sunt diferite (excepție făcând cifra din mijloc dacă avem un număr impar de cifre). De exemplu: `2783` este antipalindrom, iar `2773` nu este.
     - Funcția principală: `is_antipalindrome(n) -> bool`
     - Funcția de test: `test_is_antipalindrome()`
 
-8. Transformă un număr dat din baza `10` în baza `2`. Numărul se dă în baza `10`.
-    - Funcția principală: `get_base_2(n: str) -> str`
-    - Funcția de test: `test_get_base_2()`
+10. Transformă un număr dat din baza `10` în baza `2`. Numărul se dă în baza `10`.
+     - Funcția principală: `get_base_2(n: str) -> str`
+     - Funcția de test: `test_get_base_2()`
 
-9. Transformă un număr dat din baza `2` în baza `16`. Numărul se dă în baza `2`.
-    - Funcția principală: `get_base_16_from_2(n: str) -> str`
-    - Funcția de test: `test_get_base_16_from_2()`
+11. Transformă un număr dat din baza `2` în baza `16`. Numărul se dă în baza `2`.
+     - Funcția principală: `get_base_16_from_2(n: str) -> str`
+     - Funcția de test: `test_get_base_16_from_2()`
 
-10. Calculează combinări de `n` luate câte `k` (`n` și `k` date).
+12. Calculează combinări de `n` luate câte `k` (`n` și `k` date).
     - Funcția principală: `get_n_choose_k(n: int, k: int) -> int`
     - Funcția de test: `test_get_n_choose_k()`
 
-11. Afișează toți anii bisecți între doi ani dați (inclusiv anii dați).
+13. Afișează toți anii bisecți între doi ani dați (inclusiv anii dați).
     - Funcția principală: `get_leap_years(start: int, end: int) -> list[int]`
     - Funcția de test: `test_get_leap_years()`
 
