@@ -16,7 +16,6 @@ Facultate = tkinter.Label(fereastra_principala, text='Facultatea de Matematică 
 # Autor = tkinter.Label(fereastra_principala, text='Bățăuș Alin-Alexandru').place(x=5, y=45)
 
 informatii_button = tkinter.Button(fereastra_principala, text='Informații probleme', command=informatii_menu).place(x=378, y=70)
-probleme_button = tkinter.Button(fereastra_principala, text='Problemele',
-                                 command=probleme_calculator).place(x=5, y=70)
+probleme_button = tkinter.Button(fereastra_principala, text='Problemele', command=probleme_calculator).place(x=5, y=70)
 
 fereastra_principala.mainloop()
