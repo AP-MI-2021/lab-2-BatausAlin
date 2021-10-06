@@ -3,10 +3,6 @@ import datetime
 
 # 2.Se dă data nașterii în formatul DD/MM/YYYY. Determinați vârsta persoanei în zile.
 
-
-
-
-
 def get_age_in_days(DD, MM, YYYY):
     timpul_acum = datetime.datetime.now()
 
@@ -16,8 +12,13 @@ def get_age_in_days(DD, MM, YYYY):
     return data_finala.days
     pass
 
-
 def Problema_2():
+    def test_get_age_in_days():
+        # Am calculat de aici: https://www.topster.ro/calendar/tagerechner.php?styp=datum&stag=8&smonat=12&sjahr=1990&etag=&emonat=&ejahr=&typ=heute&subDazu=%2B&dazu=11260
+        assert get_age_in_days(17, 5, 2002) == 7082
+        assert  get_age_in_days(16, 6, 2002) == 7052
+        assert  get_age_in_days(8, 12, 1990) == 11260
+
     def Obtine_rezultatul():
         afisare_rezultat.delete(0, 'end')
         DD = int(entry_DD.get())
@@ -27,6 +28,7 @@ def Problema_2():
         afisare_rezultat.insert(0, f'Număr total zile: {get_age_in_days(DD,MM,YYYY)}')
         pass
 
+    test_get_age_in_days()
 
     Problema2 = tkinter.Tk()
     Problema2.title("Problema 2")
@@ -58,4 +60,6 @@ def Problema_2():
 
     button_subbmit = tkinter.Button(Problema2, text= 'Calculează', command= Obtine_rezultatul).place(x=330, y=170)
     Problema2.mainloop()
+
+
 

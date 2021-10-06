@@ -27,7 +27,11 @@ def get_largest_prime_below(n):
             return n
     pass
 
-
+def test_get_largest_prime_below():
+    #Functie de test cand incepem problema1 o sa vedem daca este bine sau nu
+    assert get_largest_prime_below(20) == 19
+    assert get_largest_prime_below(25) == 23
+    assert get_largest_prime_below(100) == 97
 
 def Problema_1():
     def obtine_rezultatul():
@@ -52,6 +56,7 @@ def Problema_1():
     afisare_rezultat = tkinter.Entry(problema_1, width=38, font=('Arial', 14))
     afisare_rezultat.place(x=5, y=175)
 
+    test_get_largest_prime_below()
 
     problema_1.mainloop()
 
