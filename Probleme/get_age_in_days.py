@@ -19,6 +19,8 @@ def Problema_2():
         assert  get_age_in_days(16, 6, 2002) == 7052
         assert  get_age_in_days(8, 12, 1990) == 11260
 
+    test_get_age_in_days()
+
     def Obtine_rezultatul():
         afisare_rezultat.delete(0, 'end')
         DD = int(entry_DD.get())
@@ -28,7 +30,7 @@ def Problema_2():
         afisare_rezultat.insert(0, f'Număr total zile: {get_age_in_days(DD,MM,YYYY)}')
         pass
 
-    test_get_age_in_days()
+
 
     Problema2 = tkinter.Tk()
     Problema2.title("Problema 2")

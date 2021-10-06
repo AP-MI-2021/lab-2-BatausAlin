@@ -33,6 +33,7 @@ def test_get_largest_prime_below():
     assert get_largest_prime_below(25) == 23
     assert get_largest_prime_below(100) == 97
 
+
 def Problema_1():
     def obtine_rezultatul():
         afisare_rezultat.delete(0, 'end')
@@ -43,6 +44,7 @@ def Problema_1():
     problema_1.geometry('430x200')
     problema_1.resizable(False, False)
     problema_1.title('Problema 1')
+    test_get_largest_prime_below()
 
     label_info_problema = tkinter.Label(problema_1, text='1. Găsește ultimul număr prim mai mic decât un număr dat.').place(x=2, y=5)
 
@@ -56,7 +58,6 @@ def Problema_1():
     afisare_rezultat = tkinter.Entry(problema_1, width=38, font=('Arial', 14))
     afisare_rezultat.place(x=5, y=175)
 
-    test_get_largest_prime_below()
 
     problema_1.mainloop()
 
