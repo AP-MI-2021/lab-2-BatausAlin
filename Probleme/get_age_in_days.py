@@ -14,7 +14,7 @@ def get_age_in_days(DD, MM, YYYY):
 
 def Problema_2():
     def test_get_age_in_days():
-        # Am calculat de aici: https://www.topster.ro/calendar/tagerechner.php?styp=datum&stag=8&smonat=12&sjahr=1990&etag=&emonat=&ejahr=&typ=heute&subDazu=%2B&dazu=11260
+        # Am calculat de aici: https://www.topster.ro/calendar/tagerechner.php
         assert get_age_in_days(17, 5, 2002) == 7082
         assert  get_age_in_days(16, 6, 2002) == 7052
         assert  get_age_in_days(8, 12, 1990) == 11260
